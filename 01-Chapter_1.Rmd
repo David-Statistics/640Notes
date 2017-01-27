@@ -1,0 +1,82 @@
+# Chapter 1
+
+## 8/22/2016
+
+```{block2, type = "rmddefinition"}
+
+The set $S$ of all possible outcomes of a random experiment is called the *sample space*  
+
+Examples:
+
+ * Coin: $S = \{H,T\}$  
+ * Time between mosquito bites: $S = (0,\infty)$
+
+```
+
+```{block2, type = 'rmddefinition'}
+
+A sample space is *countable* if there exists a 1-1 correspondence with a subset of the integers. Otherwise it is *uncountable*
+
+Examples:
+
+ * Coin: countable
+ * Time between mosquito bites: uncountable
+
+```
+
+```{block2, type = 'rmddefinition'}
+
+A subset of the sample space is called an *event*
+
+```
+
+```{block2, type = 'rmddefinition'}
+
+**Event Relationtions**
+
+ * *Containment*: $A \subset B$ iff $x \in A \rightarrow x \in B$
+ * *Equality*: $A = B$ iff $A \subset B$ and $B \subset A$
+
+```
+
+```{block2, type = 'rmddefinition'}
+
+**Set Operations**
+
+ * *Union*: $A \cup B = \{X : x \in A \mbox{ or } x \in B\}$
+ * *Intersection*: $A \cap B = \{X : x \in A \mbox{ and } x \in B\}$
+ * *Complementation*: $A^C = \{X : x \not\in A\}$
+
+```
+
+```{block2, type = 'rmdtheorem'}
+
+For any 3 events $A$, $B$, and $C$ defined on $S$:
+
+* *Commutativity*: $A \cup B = B \cup A$ and $A \cap B = B \cap A$
+* *Associativity*: $A \cup (B \cup C) = (A \cup B) \cup C$
+* *distributive*: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \mbox{ and } A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+* *DeMorgan's Law*: $(A \cup B)^C = A^C \cap B^C \mbox{ and } (A \cap B)^C = A^C \cup B^C$
+
+```
+
+```{block2, type = 'rmdexample'}
+
+Let $N =$ the number of the first defective engine 
+$S = \{1,2,...\}$  
+Let $A_i \equiv [N = i] = i^{th}$ engine is defective and previous $i-1$ are not defective.  
+$\bigcup_{i=1}^\infty A_i = S$  
+
+Let $B_i = i^{th}$ engine is defective. $A_i \subset B_i$.  
+$\bigcup_{i=1}^\infty B_i = S$  
+
+```
+
+```{block2, type = 'rmddefinition'}
+
+Two events, $A$, $B$ are *mutually exclusive* (or *disjoint*) if $A \cap B = \emptyset$
+
+```
+
+
+

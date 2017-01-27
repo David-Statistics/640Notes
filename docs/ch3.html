@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>STAT520 Fall 2016 Notes</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="A Compilation of notes from class">
+  <meta name="generator" content="bookdown 0.1.16 and GitBook 2.6.7">
+
+  <meta property="og:title" content="STAT520 Fall 2016 Notes" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A Compilation of notes from class" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="STAT520 Fall 2016 Notes" />
+  
+  <meta name="twitter:description" content="A Compilation of notes from class" />
+  
+
+<meta name="author" content="David Clancy">
+
+  
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="literature.html">
+<link rel="next" href="applications.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STAT 520 Notes - Fall 2016</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter 1</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#section"><i class="fa fa-check"></i><b>2.1</b> 8/22/2016</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="ch3.html"><a href="ch3.html"><i class="fa fa-check"></i><b>4</b> Chapter 3 - Common Families of Distributions</a><ul>
+<li class="chapter" data-level="4.1" data-path="ch3.html"><a href="ch3.html#section-1"><i class="fa fa-check"></i><b>4.1</b> 9/21/2016</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="ch3.html"><a href="ch3.html#discrete-uniform-n"><i class="fa fa-check"></i><b>4.1.1</b> Discrete Uniform <span class="math inline">\((N)\)</span></a></li>
+<li class="chapter" data-level="4.1.2" data-path="ch3.html"><a href="ch3.html#hypergeometric-rwn"><i class="fa fa-check"></i><b>4.1.2</b> Hypergeometric <span class="math inline">\((R,W,n)\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ch3.html"><a href="ch3.html#section-2"><i class="fa fa-check"></i><b>4.2</b> 9/26/2016</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="ch3.html"><a href="ch3.html#binomialnp"><i class="fa fa-check"></i><b>4.2.1</b> Binomial<span class="math inline">\((n,p)\)</span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="ch3.html"><a href="ch3.html#geometricp"><i class="fa fa-check"></i><b>4.2.2</b> Geometric(<span class="math inline">\(p\)</span>)</a></li>
+<li class="chapter" data-level="4.2.3" data-path="ch3.html"><a href="ch3.html#negative-binomial-negbirp"><i class="fa fa-check"></i><b>4.2.3</b> Negative Binomial (NegBi(<span class="math inline">\(r,p\)</span>))</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ch3.html"><a href="ch3.html#section-3"><i class="fa fa-check"></i><b>4.3</b> 9/28/16</a></li>
+<li class="chapter" data-level="4.4" data-path="ch3.html"><a href="ch3.html#section-4"><i class="fa fa-check"></i><b>4.4</b> 10/3/16</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="ch3.html"><a href="ch3.html#poissonlambda"><i class="fa fa-check"></i><b>4.4.1</b> Poisson(<span class="math inline">\(\lambda\)</span>)</a></li>
+<li class="chapter" data-level="4.4.2" data-path="ch3.html"><a href="ch3.html#poisson-process-n_t"><i class="fa fa-check"></i><b>4.4.2</b> Poisson Process (<span class="math inline">\(N_t\)</span>)</a></li>
+<li class="chapter" data-level="4.4.3" data-path="ch3.html"><a href="ch3.html#exponentialrate-nu-mean-1nu-theta"><i class="fa fa-check"></i><b>4.4.3</b> Exponential(rate = <span class="math inline">\(\nu\)</span>) (mean = <span class="math inline">\(1/\nu = \theta\)</span>)</a></li>
+<li class="chapter" data-level="4.4.4" data-path="ch3.html"><a href="ch3.html#gammar-rate-nu-or-mean-1nu-theta"><i class="fa fa-check"></i><b>4.4.4</b> Gamma(<span class="math inline">\(r\)</span>, rate = <span class="math inline">\(\nu\)</span>) (or mean = <span class="math inline">\(1/\nu = \theta\)</span>)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="ch3.html"><a href="ch3.html#section-5"><i class="fa fa-check"></i><b>4.5</b> 10/5/16</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="ch3.html"><a href="ch3.html#chi-squaredp"><i class="fa fa-check"></i><b>4.5.1</b> Chi-squared(<span class="math inline">\(p\)</span>)</a></li>
+<li class="chapter" data-level="4.5.2" data-path="ch3.html"><a href="ch3.html#normalmusigma2"><i class="fa fa-check"></i><b>4.5.2</b> Normal(<span class="math inline">\(\mu,\sigma^2\)</span>)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ch3.html"><a href="ch3.html#section-6"><i class="fa fa-check"></i><b>4.6</b> 10/7/2016</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="ch3.html"><a href="ch3.html#betaalpha-beta"><i class="fa fa-check"></i><b>4.6.1</b> Beta(<span class="math inline">\(\alpha, \beta\)</span>)</a></li>
+<li class="chapter" data-level="4.6.2" data-path="ch3.html"><a href="ch3.html#cauchytheta"><i class="fa fa-check"></i><b>4.6.2</b> Cauchy(<span class="math inline">\(\theta\)</span>)</a></li>
+<li class="chapter" data-level="4.6.3" data-path="ch3.html"><a href="ch3.html#exponential-families"><i class="fa fa-check"></i><b>4.6.3</b> Exponential Families</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STAT520 Fall 2016 Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ch3" class="section level1">
+<h1><span class="header-section-number">4</span> Chapter 3 - Common Families of Distributions</h1>
+<div id="section-1" class="section level2">
+<h2><span class="header-section-number">4.1</span> 9/21/2016</h2>
+
+<div class="rmddefinition">
+<p>A <em>single distribution</em> is completely specified (e.g. Gamma(3,2)).<br />
+A <em>family of distributions</em> is defined by a functional form and parameter space containing more than 1 element (e.g. Uniform(<span class="math inline">\(a\)</span>,<span class="math inline">\(b\)</span>); <span class="math inline">\(\Theta = \{(a,b) : a,b, \in \mathbb{R}\})\)</span></p>
+</div>
+<p></p>
+<div id="discrete-uniform-n" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Discrete Uniform <span class="math inline">\((N)\)</span></h3>
+<p><span class="math display">\[P(X = x) = \frac{1}{N}; x \in \{1,2,3,...\}\]</span></p>
+<p>Typical example: Die<br />
+<span class="math display">\[
+\begin{aligned}
+  E[X] &amp;= \sum_{i=1}^N i\frac{1}{N} \\
+    &amp;= \frac{1}{N}\frac{N(N+1)}{2} \\
+    &amp;=\frac{N+1}{2} \\
+  E[X^2] &amp;= \sum_{i=1}^N i^2\frac{1}{N} \\
+    &amp;= \frac{1}{N}\frac{N(N+1)(2N + 1)}{6} \\
+    &amp;= \frac{(N+1)(2N+1)}{6} \\
+  V[X] &amp;= E[X^2] - E[X]^2 \\
+    &amp;= \frac{(N+1)(2N+1)}{6} - \frac{(N+1)^2}{4} \\
+    &amp;= \frac{2(N+1)(2N+1) - 3(N+1)^2}{12} \\
+    &amp;= \frac{(N+1)((4N+2) - (3N+3))}{12} \\
+    &amp;= \frac{(N+1)(N-1)}{12}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="hypergeometric-rwn" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Hypergeometric <span class="math inline">\((R,W,n)\)</span></h3>
+<p>Suppose an urn has <span class="math inline">\(R\)</span> red balls and <span class="math inline">\(W\)</span> white balls and suppose <span class="math inline">\(n\)</span> balls are sampled without replacement. Let <span class="math inline">\(T_n\)</span> be the number of red balls sampled. <span class="math display">\[
+\begin{aligned}
+  T_n &amp;= \mbox{Hypergeometric}(R,W,n) \\
+  P(T_n = k) &amp;= \frac{{R \choose k}{W \choose n-k}}{{R + W \choose n}}; k \in \{ \max(0, n-W), ..., \min(R,n)\}
+\end{aligned}
+\]</span> Note that if we see <span class="math inline">\(T_n = X_1 + ... + X_n\)</span>, the <span class="math inline">\(X_i\)</span> are <strong>not</strong> independent. <span class="math display">\[
+\begin{aligned}
+  E[T_n] &amp;= E[\sum X_i] = \frac{nR}{R+W} \\
+  V[T_n] &amp;= np(1-p)\left(1 - \frac{n-1}{R+W-1}\right)
+\end{aligned}
+\]</span> In the variance, <span class="math inline">\(np(1-p)\)</span> is the binomial variance while <span class="math inline">\(\left(1 - \frac{n-1}{R+W-1}\right)\)</span> is the <em>finite sample correction</em>.</p>
+
+<div class="rmdexample">
+<p>Last Christmas, the kitchen had 10 white lights and the living room had 20 colored lights 5 of the 30 failed. What is the probability exactly 3 were colored?</p>
+<p>Urn1:</p>
+<p><span class="math display">\[P(T_5 = 3) = \frac{{20 \choose 3} {10 \choose 2}}{{30 \choose 5}} \]</span></p>
+<p>This is a Hypergeometric(20,10,5) distribution and we’re sampling the failed lights.</p>
+<p>Urn2:</p>
+<p><span class="math display">\[ P(T_{20} = 3) = \frac{{5 \choose 3} {25 \choose 17}}{{30 \choose 20}}\]</span></p>
+<p>This is a Hypergeometric(5,25,20) distribution and we’re sampling the white lights.</p>
+</div>
+<p></p>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2><span class="header-section-number">4.2</span> 9/26/2016</h2>
+<p>Let <span class="math inline">\(X_1, ... \stackrel{iid}{\sim}\)</span> Bernoulli(<span class="math inline">\(p\)</span>).<br />
+Fix <span class="math inline">\(n \in \mathbb{N}\)</span>, <span class="math display">\[ T_n = X_1 + X_2 + ... + X_n \sim \mbox{Binomial}(n,p) \]</span> Fix <span class="math inline">\(r \in \mathbb{N}\)</span>,<br />
+$W_r = $ number of trials til <span class="math inline">\(r\)</span> successes <span class="math display">\[ W_r \sim \mbox{NegativeBinomial}(r,p) \]</span> Fix <span class="math inline">\(i \in \mathbb{N}\)</span>, <span class="math display">\[ Y_i = W_i - W_{i-1} \sim \mbox{Geometric}(p) \]</span></p>
+<div id="binomialnp" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Binomial<span class="math inline">\((n,p)\)</span></h3>
+<p><span class="math display">\[ P(T_n = k) = {n \choose k} p^k (1-p)^{n-k} \]</span> Note that since the <span class="math inline">\(X_i\)</span> are independent, calculate the expected value and variance using the sum of the <span class="math inline">\(X_i\)</span>. <span class="math display">\[
+\begin{aligned}
+  E[T_n] &amp;= np \\
+  V[T_n] &amp;= np(1-p)
+\end{aligned}
+\]</span></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(T_m \sim\)</span> Binom(<span class="math inline">\(m,p\)</span>) and <span class="math inline">\(T_n \sim\)</span> Binom(<span class="math inline">\(n,p\)</span>) and <span class="math inline">\(T_m \perp T_n\)</span> then,</p>
+<p><span class="math display">\[ T_m + T_n \sim \mbox{Binom}(m+n,p)\]</span></p>
+</div>
+<p></p>
+</div>
+<div id="geometricp" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Geometric(<span class="math inline">\(p\)</span>)</h3>
+<p>Consider a typical interarrival time, <span class="math inline">\(Y = Y_1\)</span>.<br />
+The event that <span class="math inline">\([Y = k]\)</span> occurs if and only if the first success follows <span class="math inline">\(k-1\)</span> failures. <span class="math display">\[ P(Y = k) = (1-p)^{k-1}p; \qquad k = 0,1,... \]</span></p>
+
+<div class="rmdtheorem">
+<p><strong>Tail Probability</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+  P(Y &gt; k) &amp;= \sum_{i = k+1}^\infty (1-p)^{k-1}p \qquad j = i - (k+1) \\
+    &amp;= \sum_{j=0}^\infty (1-p)^{j+k}p \\
+    &amp;= (1-p)^k\sum_{j=0}^\infty (1-p)^jp \\
+    &amp;= (1-p)^k \frac{p}{1-(1-p)} \\
+    &amp;= (1-p)^k; \qquad k = 0,1,...
+\end{aligned}
+\]</span></p>
+<p>Thus, we have</p>
+<p><span class="math display">\[ F_Y(y) = 1 - (1-p)^y \]</span></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p><span class="math inline">\(Y_1, Y_2,...\)</span> are iid Geometric(<span class="math inline">\(p\)</span>) random variables.</p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(Y \sim\)</span> Geometric(<span class="math inline">\(p\)</span>) then <span class="math inline">\(Y\)</span> has the <em>lack of memory property</em>.</p>
+<p><span class="math display">\[ P(Y &gt; k +i | Y &gt; k) = P(Y = i) \]</span> for <span class="math inline">\(i \geq 1\)</span> and fixed <span class="math inline">\(k \geq 1\)</span>.</p>
+<p><strong>Proof</strong>:</p>
+<p>Fix <span class="math inline">\(k \in \mathbb{N}\)</span> and <span class="math inline">\(i \in \mathbb{N}\)</span>, then we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+  P(Y &gt; k +i | Y &gt; k) &amp;= \frac{P(Y &gt; k + i \cap Y &gt; k)}{P(Y &gt; k)} \\
+    &amp;= \frac{P(Y &gt; k+i)}{P(Y &gt; k)} \\
+    &amp;= \frac{(1-p)^{k+i}}{(1-p)^{k}} \\
+    &amp;= (1-p)^i \\
+    &amp;= P(Y &gt; i)
+\end{aligned}
+\]</span></p>
+</div>
+<p></p>
+<p>For the geometric distribution, we have, <span class="math display">\[
+\begin{aligned}
+  E[Y] &amp;= \frac{1}{p} \\
+  V[Y] &amp;= \frac{1-p}{p^2} 
+\end{aligned}
+\]</span></p>
+<p><strong>TODO: ADD PROOF &amp; THEOREM FORMATING</strong></p>
+</div>
+<div id="negative-binomial-negbirp" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Negative Binomial (NegBi(<span class="math inline">\(r,p\)</span>))</h3>
+<p>Let <span class="math inline">\(W_r\)</span> be the number of Bernoulli<span class="math inline">\((p)\)</span> trials until <span class="math inline">\(r\)</span> successes. Note that <span class="math inline">\([W_r = k] = [\sum_{i=1}^n Y_i = k] = [T_{k-1} = r-1 \cap X_k = 1]\)</span> all describe the same event. <span class="math display">\[ P(W_r = k) = {k-1 \choose r-1}p^r(1-p)^{k-r}; \qquad k = r, r+1, ... \]</span></p>
+
+<div class="rmdtheorem">
+<p><strong>Event Identity</strong></p>
+<p>The event <span class="math inline">\([W_r &gt; n]\)</span> is equivalent to the event <span class="math inline">\([T_n &lt; r]\)</span> and thus any calculation involving <span class="math inline">\(W_r\)</span> can be replaced by a calculation involving <span class="math inline">\(T_n\)</span></p>
+</div>
+<p></p>
+<p>Using the fact the relationship between the negative binomial and the geometric distribution, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+  E[W_r] &amp;= \frac{r}{p} \\
+  V[W_r] &amp;= \frac{r(1-p)}{p^2}
+\end{aligned}
+\]</span></p>
+
+<div class="rmdtheorem">
+<p>Suppose <span class="math inline">\(W_r \sim\)</span> NegBi(<span class="math inline">\(r,p\)</span>) and <span class="math inline">\(W_s \sim\)</span> NegBi(<span class="math inline">\(s,p\)</span>) and <span class="math inline">\(W_r \perp W_s\)</span>. Then we have,</p>
+<p><span class="math display">\[ W_r + W_s \sim \mbox{NegBi}(r+s,p) \]</span></p>
+</div>
+<p></p>
+</div>
+</div>
+<div id="section-3" class="section level2">
+<h2><span class="header-section-number">4.3</span> 9/28/16</h2>
+
+<div class="rmdtheorem">
+<p><strong>Conditional Randomness</strong><br />
+Let <span class="math inline">\(X_1, ..., X_n\)</span> denote a sequence of 0’s and 1’s.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  P(X_1 = x_1, ..., X_n = x_n | X_1 + ... + X_n = T_n = m) &amp;= \frac{\prod_{i = 1}^n p^{x_i}(1-p)^{1-x_i}}{{n \choose m} p^m(1-p)^{n-m}} \\
+    &amp;= \frac{p^{\sum_{i=1}^n x_i}(1-p)^{n - \sum_{i=1}^n x_i}}{{n \choose m} p^m(1-p)^{n-m}} \\
+    &amp;= \frac{p^{m}(1-p)^{n - m}}{{n \choose m} p^m(1-p)^{n-m}} \\
+    &amp;= \frac{1}{{n \choose m}}
+\end{aligned}
+\]</span></p>
+<p>Thus, given that the sum of <span class="math inline">\(n\)</span> bernoullis is <span class="math inline">\(m\)</span> then, each permutation of success and failures is equally likely.</p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>Let <span class="math inline">\(k &lt; n\)</span>, now given that <span class="math inline">\(T_n = m\)</span>, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+  P(T_k = i | T_n = m) &amp;= \frac{P(T_k = i) P(T_{(k+1):n} = m-i)}{P(T_n = m)} \\
+    &amp;= \frac{{k \choose i}p^i(1-p)^{k-i}{n-k \choose m-i}p^{m-i}(1-p)^{n-k-m+i}}{{n \choose m}p^m(1-p)^{n-m}} \\
+    &amp;= \frac{{k \choose i}{n-k \choose m-i}p^{m}(1-p)^{n-m}}{{n \choose m}p^m(1-p)^{n-m}} \\
+    &amp;= \frac{{k \choose i}{n-k \choose m-i}}{{n \choose m}}
+\end{aligned}
+\]</span></p>
+</div>
+<p></p>
+<p><strong>TODO: Add a bunch of examples for BP and introductory examples to PP</strong></p>
+</div>
+<div id="section-4" class="section level2">
+<h2><span class="header-section-number">4.4</span> 10/3/16</h2>
+<div id="poissonlambda" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Poisson(<span class="math inline">\(\lambda\)</span>)</h3>
+<p><span class="math display">\[ P(T = k) = e^{-\lambda}\frac{\lambda^k}{k!}; \qquad k = 0,1,... \]</span></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(T \sim\)</span> Poisson(<span class="math inline">\(\lambda\)</span>) then,</p>
+<p><span class="math display">\[
+\begin{aligned}
+  E[T] = \lambda \\
+  V[T] = \lambda
+\end{aligned}
+\]</span></p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(T \sim\)</span> Poisson(<span class="math inline">\(\lambda\)</span>) and <span class="math inline">\(S \sim\)</span> Poisson(<span class="math inline">\(\phi\)</span>) and <span class="math inline">\(T \perp S\)</span> then,</p>
+<p><span class="math display">\[ T + S \sim \mbox{Poisson}(\lambda + \phi) \]</span></p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+</div>
+<div id="poisson-process-n_t" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Poisson Process (<span class="math inline">\(N_t\)</span>)</h3>
+<p>Recall the experiment with U<sub>238</sub>:</p>
+<ul>
+<li><span class="math inline">\(N_t\)</span> = count of particles by time <span class="math inline">\(t\)</span><br />
+</li>
+<li><span class="math inline">\(\nu\)</span> = mean # of counts per unit time (intensity or rate)<br />
+</li>
+<li><span class="math inline">\(\nu t\)</span> = mean # of counts in <span class="math inline">\(t\)</span> time</li>
+</ul>
+<p>Thus, <span class="math inline">\(N_t \sim\)</span> Poisson(<span class="math inline">\(\nu t\)</span>). We denote the process as <span class="math inline">\(\{N_t:t \geq 0\}\)</span> and <span class="math inline">\(N_0 = 0\)</span>.</p>
+<p>If we fix <span class="math inline">\(r \in \mathbb{N}\)</span>,<br />
+<span class="math inline">\(W_r\)</span> = time at which the <span class="math inline">\(r\)</span><sup>th</sup> count is registered (the <span class="math inline">\(r\)</span><sup>th</sup> waiting time).<br />
+<span class="math inline">\(W_r \sim\)</span> Gamma(<span class="math inline">\(r\)</span>, rate = <span class="math inline">\(\nu\)</span>)</p>
+<p>If we fix <span class="math inline">\(i \in \mathbb{N}\)</span>, <span class="math inline">\(Y_i = W_i - W_{i-1}\)</span> (time from the <span class="math inline">\(i-1\)</span><sup>th</sup> count to the <span class="math inline">\(i\)</span><sup>th</sup> count)<br />
+<span class="math inline">\(Y_i \sim\)</span> Exponential(rate = <span class="math inline">\(\nu\)</span>)</p>
+
+<div class="rmddefinition">
+<p>We call <span class="math inline">\(\{N_t : t \geq 0\}\)</span> a Poisson Process if,</p>
+<ol style="list-style-type: decimal">
+<li>N_0 = 0<br />
+</li>
+<li>If <span class="math inline">\(s &lt; t\)</span>, <span class="math inline">\(N_s \perp N_t - N_s\)</span></li>
+<li><span class="math inline">\(N_{s+t} - N_t\)</span> and <span class="math inline">\(N_s\)</span> are identically distributed</li>
+<li><span class="math inline">\(\lim_{t \to 0} \frac{P(N_t = 1)}{t} = \nu\)</span></li>
+<li><span class="math inline">\(\lim_{t \to 0} \frac{P(N_t &gt; 1)}{t} = 0\)</span></li>
+</ol>
+</div>
+<p></p>
+</div>
+<div id="exponentialrate-nu-mean-1nu-theta" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Exponential(rate = <span class="math inline">\(\nu\)</span>) (mean = <span class="math inline">\(1/\nu = \theta\)</span>)</h3>
+<p>The event <span class="math inline">\([Y_1 &gt; t]\)</span> is equivalent to the event <span class="math inline">\([N_t = 0]\)</span> and so we derive the pdf and cdf of the exponential distribution as follows,</p>
+<p><span class="math display">\[
+\begin{aligned}
+  F_Y(y) &amp;= P(Y \leq y) = 1 - P(Y &gt; y) \\
+    &amp;= 1 - P(N_y = 0) \\
+    &amp;= 1 - \frac{e^{-\nu y}(\nu y)^0}{0!} \\
+    &amp;= 1 - e^{-\nu y}; \qquad y &gt; 0 \\
+  f_Y(y) &amp;= \nu e^{-\nu y} = \frac{1}{\theta}e^{-y/\theta}; \qquad y &gt; 0
+\end{aligned}
+\]</span></p>
+
+<div class="rmdtheorem">
+<p><strong>Lack of memory property</strong> If <span class="math inline">\(Y \sim\)</span> Exponential(rate = <span class="math inline">\(\nu\)</span>), then</p>
+<p><span class="math display">\[ P(Y &gt; s + t | Y(Y &gt; s)) = P(Y &gt; t) \]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  P(Y &gt; s + t | P(Y &gt; s)) &amp;= \frac{P(Y &gt; s+t)}{P(Y &gt; s)} \\
+    &amp;= \frac{e^{-\nu s - \nu t}}{e^{-\nu s}} \\
+    &amp;= \frac{e^{-\nu s} e^{-\nu t}}{e^{-\nu s}} \\
+    &amp;= e^{-\nu t} \\
+    &amp;= P(Y &gt; t)
+\end{aligned}
+\]</span></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(Y \sim\)</span> Exp(rate = <span class="math inline">\(\nu\)</span>) then,</p>
+<p><span class="math display">\[
+\begin{aligned}
+  E[Y] &amp;= \frac{1}{\nu} = \theta \\
+  V[Y] &amp;= \frac{1}{\nu^2} = \theta^2
+\end{aligned}
+\]</span></p>
+<strong>Proof:</strong><br />
+<strong>TODO:PROOF</strong>
+</div>
+<p></p>
+</div>
+<div id="gammar-rate-nu-or-mean-1nu-theta" class="section level3">
+<h3><span class="header-section-number">4.4.4</span> Gamma(<span class="math inline">\(r\)</span>, rate = <span class="math inline">\(\nu\)</span>) (or mean = <span class="math inline">\(1/\nu = \theta\)</span>)</h3>
+<p>The event <span class="math inline">\([W_r &gt; t]\)</span> is equivalent to the event <span class="math inline">\([N_t &lt; r]\)</span>.</p>
+<p><strong>TODO: Add derivation of pdf</strong> <span class="math display">\[
+\begin{aligned}
+  1 - F_{W_r}(t) &amp;= P(N_t &lt; r) \\
+    &amp;= \sum_{j = 0}^{r-1} e^{-\nu t} \frac{(\nu t)^j}{j!} \\
+  f_{W_r}(t) &amp;= \frac{\nu ^ r t^{r - 1} e^{-\nu t}}{\Gamma(r)} = \frac{t^{r-1}e^{-t/\theta}}{\theta^r \Gamma(r)}
+\end{aligned}
+\]</span></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(W_r \sim\)</span> Gamma(<span class="math inline">\(r\)</span>, rate = <span class="math inline">\(\nu\)</span>), then <span class="math display">\[
+\begin{aligned}
+  E[W_r] &amp;= \frac{r}{\nu} = r\theta \\
+  V[W_r] &amp;= \frac{r}{\nu^2} = r\theta^2
+\end{aligned}
+\]</span></p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(W_r \sim\)</span> Gamma(<span class="math inline">\(r\)</span>, rate = <span class="math inline">\(\nu\)</span>) and <span class="math inline">\(W_s \sim\)</span> Gamma(<span class="math inline">\(s\)</span>, rate = <span class="math inline">\(\nu\)</span>) and <span class="math inline">\(W_r \perp W_s\)</span>, then</p>
+<p><span class="math display">\[ W_r + W_s \sim \mbox{Gamma}(r+s, \mbox{rate} = \nu) \]</span></p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p><strong>Random Location of Times of Event Occurences</strong></p>
+<p>Suppose <span class="math inline">\(N_t = m\)</span>, then the <span class="math inline">\(m\)</span> event times constitute the ordered value of <span class="math inline">\(m\)</span> independent repetitions of a Uniform(<span class="math inline">\(0,t\)</span>) random variable.<br />
+Equivalently, suppose <span class="math inline">\(W_{m+1} = t\)</span> then the previous waiting times, <span class="math inline">\(0 \leq W_1 \leq W_2 \leq ... \leq W_m \leq t\)</span> are distributed as ordered values of <span class="math inline">\(m\)</span> indepenedent repetitions of a Uniform(<span class="math inline">\(0,t\)</span>) random variable.</p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+
+<div class="rmdtheorem">
+<p>Suppose <span class="math inline">\(s &lt; t\)</span> then,</p>
+<p><span class="math display">\[ P(N_s=k | N_t = m) = {m \choose k}\left(\frac{s}{t}\right)^k \left(1-\frac{s}{t}\right)^{m-k} \]</span></p>
+<p>or equivalently,</p>
+<p><span class="math display">\[N_s | N_t = m \sim \mbox{Binom}(m, \frac{s}{t})\]</span></p>
+<p><strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+</div>
+</div>
+<div id="section-5" class="section level2">
+<h2><span class="header-section-number">4.5</span> 10/5/16</h2>
+<p><strong>TODO: ADD A BUNCH OF PP EXAMPLE PROBLEMS</strong></p>
+<div id="chi-squaredp" class="section level3">
+<h3><span class="header-section-number">4.5.1</span> Chi-squared(<span class="math inline">\(p\)</span>)</h3>
+<p>Note that the <span class="math inline">\(\chi^2_p\)</span> distiribution is simply a special case of the Gamma. Specifically, <span class="math inline">\(\chi^2_p \sim\)</span> Gamma(<span class="math inline">\(p/2\)</span>, rate = .5).<br />
+Suppose <span class="math inline">\(X \sim \chi^2_p\)</span>, then <span class="math display">\[ f_X(x) = \frac{.5^{p/2} x^{p/2 - 1}e^{-x/2}}{\Gamma(p/2)}; \qquad x &gt; 0 \]</span></p>
+
+<div class="rmdtheorem">
+<p>Suppose <span class="math inline">\(X \sim \chi^2_p\)</span>, then</p>
+<p><span class="math display">\[
+\begin{aligned}
+  E[X] &amp;= p \\
+  V[X] &amp;= 2p
+\end{aligned}
+\]</span></p>
+<strong>Proof:</strong><br />
+Use the fact that it’s a special case of the gamma.
+</div>
+<p></p>
+</div>
+<div id="normalmusigma2" class="section level3">
+<h3><span class="header-section-number">4.5.2</span> Normal(<span class="math inline">\(\mu,\sigma^2\)</span>)</h3>
+<p>If <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span> and <span class="math inline">\(\mu \in \mathbb{R}\)</span> and <span class="math inline">\(\sigma \in \mathbb{R}^+\)</span> then,</p>
+<p><span class="math display">\[ f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right); \qquad x \in \mathbb{R} \]</span></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span> then, <span class="math inline">\(Z = \frac{X - \mu}{\sigma}\)</span> is distributed <span class="math inline">\(N(0,1)\)</span> which is the <em>standard normal distribution</em> and has pdf, <span class="math display">\[ f_Z(z) = \frac{1}{\sqrt{2\pi}}\exp\left(\frac{-z^2}{2}\right) \]</span></p>
+<p><strong>Proof:</strong><br />
+<span class="math display">\[
+\begin{aligned}
+  F_Z(t) &amp;= P(Z \leq t) = P\left(\frac{X - \mu}{\sigma} \leq t\right) = P(X \leq \mu + \sigma t) \\
+    &amp;= \int_{-\infty}^{\mu + \sigma t}\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)dx \qquad z = \frac{x - \mu}{\sigma}, dz = \frac{1}{\sigma}dx \\
+    &amp;= \int_{\infty}^t \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-z^2}{2}\right)\sigma dz \\
+    &amp;= \int_{\infty}^t \frac{1}{\sqrt{2\pi}}\exp\left(\frac{-z^2}{2}\right) dz \\
+  f_Z(t) &amp;= \frac{d}{dt}F_Z(t) \\
+    &amp;= \frac{1}{\sqrt{2\pi}}\exp(-t^2/2)
+\end{aligned}
+\]</span></p>
+</div>
+<p></p>
+<p><strong>Note now that any probability including normal random variables can be calculated in term of standard normal random variables.</strong></p>
+
+<div class="rmdtheorem">
+<p>Let <span class="math inline">\(X \sim N(\mu,\sigma^2)\)</span> then, <span class="math display">\[
+\begin{aligned}
+  E[X] &amp;= \mu \\
+  V[X] &amp;= \sigma^2 \\
+\end{aligned}
+\]</span></p>
+<p><strong>PROOF:</strong> <strong>TODO: ADD PROOF (USE Z)</strong></p>
+</div>
+<p></p>
+</div>
+</div>
+<div id="section-6" class="section level2">
+<h2><span class="header-section-number">4.6</span> 10/7/2016</h2>
+<div id="betaalpha-beta" class="section level3">
+<h3><span class="header-section-number">4.6.1</span> Beta(<span class="math inline">\(\alpha, \beta\)</span>)</h3>
+<p>If <span class="math inline">\(X \sim\)</span> Beta(<span class="math inline">\(\alpha, \beta\)</span>) then, <span class="math display">\[ f_X(x) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha - 1}(1-x)^{\beta - 1} \qquad x \in (0,1); \alpha,\beta &gt; 0 \]</span></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(X \sim\)</span> Beta(<span class="math inline">\(\alpha, \beta\)</span>) then,</p>
+<p><span class="math display">\[
+\begin{aligned}
+  E[X^n] &amp;= \frac{B(\alpha + n, \beta)}{B(\alpha,\beta)}; \qquad B(\alpha,\beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)} \\
+  E[X] &amp;= \frac{\alpha}{\alpha + \beta} \\
+  V[X] &amp;= \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}
+\end{aligned}
+\]</span></p>
+<p><strong>PROOF:</strong><br />
+<strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+</div>
+<div id="cauchytheta" class="section level3">
+<h3><span class="header-section-number">4.6.2</span> Cauchy(<span class="math inline">\(\theta\)</span>)</h3>
+<p>If <span class="math inline">\(X \sim\)</span> Cauchy(<span class="math inline">\(\theta\)</span>), then</p>
+<p><span class="math display">\[ f_X(x) = \frac{1}{\pi(1 + (x - \theta)^2)} \qquad x \in \mathbb{R} \]</span> Note that <span class="math inline">\(\theta\)</span> is the “center”&quot; of the distriubtion and is symmetric about that point.</p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(X \sim\)</span> Cauchy(<span class="math inline">\(\theta\)</span>), then</p>
+<p><span class="math display">\[ E[|X|] = \infty \]</span></p>
+<p><strong>PROOF:</strong><br />
+<strong>TODO: ADD PROOF</strong></p>
+</div>
+<p></p>
+</div>
+<div id="exponential-families" class="section level3">
+<h3><span class="header-section-number">4.6.3</span> Exponential Families</h3>
+
+<div class="rmddefinition">
+<p>Suppose a family of distributions can be written in the format</p>
+<p><span class="math display">\[ f(x) = c(\theta)h(x)\exp\left(\sum_{i=1}^k w_i(\theta)t_i(\theta)\right) \qquad (1) \]</span></p>
+<p>the family <span class="math inline">\(\mathcal{F} = \{f(x | \theta) : \theta \in \Theta\}\)</span> is called an <em>exponential family</em></p>
+</div>
+<p></p>
+
+<div class="rmdexample">
+<p><em>Family of Exponential Distributions</em></p>
+<p><span class="math display">\[\mathcal{F} = \{f(x | \theta) = \frac{1}{\theta}e^{-x/\theta}\mathbb{1}(x &gt; 0) : \theta \in (0,\infty)\}\]</span></p>
+<p>Here, <span class="math inline">\(c(\theta) = \frac{1}{\theta}, h(x) = \mathbb{1}(x &gt; 0), w_1(\theta) = 1/\theta, t_1(x) = -x\)</span>. Note that this is not a unique decomposition.</p>
+</div>
+<p></p>
+
+<div class="rmddefinition">
+<p>We have that (1) can be reexpressed in natural parameter format (cannonical form) as</p>
+<p><span class="math display">\[ f(x) = \tilde{c}(\eta)h(x)\exp\left(\sum_{i=1}^k \eta_i t_i(x) \right) \qquad (2)\]</span></p>
+<p>The parameter space for <span class="math inline">\(\eta\)</span> is called the natural parameter space and is denoted <span class="math inline">\(N\)</span>. The natural parameter space is the set of all values of the vector <span class="math inline">\(\eta\)</span> for which (2) is a density. <span class="math inline">\(N = \{n \in \mathbb{R}^k : 1/\xi(\eta) &lt; \infty\}\)</span> and <span class="math inline">\(N\)</span> is a convex set.</p>
+<p><em>Note</em>: Furthermore, the function <span class="math inline">\(E[g(x)]\)</span> can be differentiate “under the integral sign” any number of times on the interior of <span class="math inline">\(N\)</span>.</p>
+</div>
+<p></p>
+<p>If <span class="math inline">\(N\)</span> does not contain an open rectangle/ball in <span class="math inline">\(\mathbb{R}^k\)</span>, then <span class="math inline">\(\mathcal{F}\)</span> is not a full exponential family.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="literature.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="applications.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Chapter_3.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
